@@ -1,0 +1,33 @@
+[ 2025-09-09 02:31:58,856 ] 9 src.logger - INFO - Starting to load dataset...
+[ 2025-09-09 02:31:58,881 ] 11 src.logger - INFO - Dataset loaded successfully with shape (1000, 8)
+[ 2025-09-09 02:31:58,881 ] 21 src.logger - INFO - Starting data transformation...
+[ 2025-09-09 02:31:58,885 ] 27 src.logger - INFO - Shape of dataset: X=(1000, 7), y=(1000,)
+[ 2025-09-09 02:31:58,887 ] 33 src.logger - INFO - Data split into train=(800, 7), test=(200, 7)
+[ 2025-09-09 02:31:58,889 ] 39 src.logger - INFO - Numerical features: ['reading_score', 'writing_score']
+[ 2025-09-09 02:31:58,889 ] 40 src.logger - INFO - Categorical features: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2025-09-09 02:31:58,899 ] 60 src.logger - INFO - Preprocessor saved as preprocessor.pkl
+[ 2025-09-09 02:31:58,899 ] 96 src.logger - INFO - \U0001f50d Training model: Random Forest
+[ 2025-09-09 02:32:02,750 ] 102 src.logger - INFO - \u2705 Best params for Random Forest: {'n_estimators': 64}
+[ 2025-09-09 02:32:02,900 ] 112 src.logger - INFO - \U0001f4ca Random Forest R2 score on test: 0.852
+[ 2025-09-09 02:32:02,900 ] 118 src.logger - INFO - \U0001f31f New best model: Random Forest with R2=0.852
+[ 2025-09-09 02:32:02,900 ] 96 src.logger - INFO - \U0001f50d Training model: Decision Tree
+[ 2025-09-09 02:32:04,346 ] 102 src.logger - INFO - \u2705 Best params for Decision Tree: {'criterion': 'poisson'}
+[ 2025-09-09 02:32:04,351 ] 112 src.logger - INFO - \U0001f4ca Decision Tree R2 score on test: 0.755
+[ 2025-09-09 02:32:04,351 ] 96 src.logger - INFO - \U0001f50d Training model: Gradient Boosting
+[ 2025-09-09 02:32:06,325 ] 102 src.logger - INFO - \u2705 Best params for Gradient Boosting: {'learning_rate': 0.1, 'n_estimators': 64, 'subsample': 0.8}
+[ 2025-09-09 02:32:06,372 ] 112 src.logger - INFO - \U0001f4ca Gradient Boosting R2 score on test: 0.880
+[ 2025-09-09 02:32:06,372 ] 118 src.logger - INFO - \U0001f31f New best model: Gradient Boosting with R2=0.880
+[ 2025-09-09 02:32:06,373 ] 96 src.logger - INFO - \U0001f50d Training model: Linear Regression
+[ 2025-09-09 02:32:06,408 ] 102 src.logger - INFO - \u2705 Best params for Linear Regression: {}
+[ 2025-09-09 02:32:06,410 ] 112 src.logger - INFO - \U0001f4ca Linear Regression R2 score on test: 0.880
+[ 2025-09-09 02:32:06,410 ] 118 src.logger - INFO - \U0001f31f New best model: Linear Regression with R2=0.880
+[ 2025-09-09 02:32:06,410 ] 96 src.logger - INFO - \U0001f50d Training model: XGBRegressor
+[ 2025-09-09 02:32:13,458 ] 102 src.logger - INFO - \u2705 Best params for XGBRegressor: {'learning_rate': 0.05, 'n_estimators': 64}
+[ 2025-09-09 02:32:13,513 ] 112 src.logger - INFO - \U0001f4ca XGBRegressor R2 score on test: 0.851
+[ 2025-09-09 02:32:13,514 ] 96 src.logger - INFO - \U0001f50d Training model: CatBoosting Regressor
+[ 2025-09-09 02:32:16,092 ] 102 src.logger - INFO - \u2705 Best params for CatBoosting Regressor: {'depth': 6, 'iterations': 100, 'learning_rate': 0.1}
+[ 2025-09-09 02:32:16,211 ] 112 src.logger - INFO - \U0001f4ca CatBoosting Regressor R2 score on test: 0.857
+[ 2025-09-09 02:32:16,211 ] 96 src.logger - INFO - \U0001f50d Training model: AdaBoost Regressor
+[ 2025-09-09 02:32:17,151 ] 102 src.logger - INFO - \u2705 Best params for AdaBoost Regressor: {'learning_rate': 0.5, 'n_estimators': 256}
+[ 2025-09-09 02:32:17,436 ] 112 src.logger - INFO - \U0001f4ca AdaBoost Regressor R2 score on test: 0.852
+[ 2025-09-09 02:32:17,436 ] 120 src.logger - INFO - \U0001f3c6 Final Best Model: Linear Regression with R2=0.880

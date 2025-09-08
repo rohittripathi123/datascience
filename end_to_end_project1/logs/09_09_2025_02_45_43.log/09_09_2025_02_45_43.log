@@ -1,0 +1,21 @@
+[ 2025-09-09 02:45:44,486 ] 55 src.logger - INFO - Starting Flask application...
+[ 2025-09-09 02:45:44,495 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.8:8080
+[ 2025-09-09 02:45:44,495 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2025-09-09 02:46:46,602 ] 17 src.logger - INFO - Home page accessed
+[ 2025-09-09 02:46:46,605 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 02:46:46] "GET / HTTP/1.1" 200 -
+[ 2025-09-09 02:46:46,733 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 02:46:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2025-09-09 02:46:54,984 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 02:46:54] "[33mGET /home HTTP/1.1[0m" 404 -
+[ 2025-09-09 02:47:04,891 ] 17 src.logger - INFO - Home page accessed
+[ 2025-09-09 02:47:04,891 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 02:47:04] "GET / HTTP/1.1" 200 -
+[ 2025-09-09 02:47:05,003 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 02:47:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2025-09-09 02:47:20,021 ] 23 src.logger - INFO - GET request received at /predictdata
+[ 2025-09-09 02:47:20,024 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 02:47:20] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-09-09 02:48:07,582 ] 27 src.logger - INFO - POST request received at /predictdata
+[ 2025-09-09 02:48:07,589 ] 42 src.logger - INFO - Input DataFrame: 
+   gender race_ethnicity parental_level_of_education     lunch test_preparation_course  reading_score  writing_score
+0  female        group C                some college  standard               completed           90.0           88.0
+[ 2025-09-09 02:48:07,600 ] 46 src.logger - INFO - Prediction result: 77.93786547507096
+[ 2025-09-09 02:48:07,600 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Sep/2025 02:48:07] "POST /predictdata HTTP/1.1" 200 -
